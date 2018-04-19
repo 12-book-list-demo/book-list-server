@@ -46,5 +46,5 @@ app.post('/api/v1/books', (req,res) => {
       req.body.image_url,
       req.body.description]);
 });
-// app.get('*', (req, res) => res.redirect(CLIENT_URL));
+app.get('*', (req, res) => res.redirect(CLIENT_URL));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
